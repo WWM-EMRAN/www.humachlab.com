@@ -491,6 +491,39 @@ Social Icons
 .social-icons li .quora {
     background: url(../img/social/quora.png) no-repeat;
 }
+.social-icons li .email {
+    background: url(../img/social/email.png) no-repeat;
+}
+.social-icons li .phone {
+    background: url(../img/social/phone.png) no-repeat;
+}
+.social-icons li .website {
+    background: url(../img/social/website.png) no-repeat;
+}
+.social-icons li .whatsapp {
+    background: url(../img/social/whatsapp.png) no-repeat;
+}
+.social-icons li .msteams {
+    background: url(../img/social/msteams.png) no-repeat;
+}
+.social-icons li .x {
+    background: url(../img/social/x.png) no-repeat;
+}
+.social-icons li .stackoverflow {
+    background: url(../img/social/stackoverflow.png) no-repeat;
+}
+.social-icons li .kaggle {
+    background: url(../img/social/kaggle.png) no-repeat;
+}
+.social-icons li .googlescholar {
+    background: url(../img/social/googlescholar.png) no-repeat;
+}
+.social-icons li .researchgate {
+    background: url(../img/social/researchgate.png) no-repeat;
+}
+.social-icons li .orcid {
+    background: url(../img/social/orcid.png) no-repeat;
+}
 .social-icons.social-icons-color > li > a {
     opacity: 0.7;
     background-position: 0 -38px !important;
@@ -636,6 +669,39 @@ Inline Social Icons
 }
 .social-icon.quora {
     background: url(../img/social/quora.png) no-repeat;
+}
+.social-icon.email {
+    background: url(../img/social/email.png) no-repeat;
+}
+.social-icon.phone {
+    background: url(../img/social/phone.png) no-repeat;
+}
+.social-icon.website {
+    background: url(../img/social/website.png) no-repeat;
+}
+.social-icon.whatsapp {
+    background: url(../img/social/whatsapp.png) no-repeat;
+}
+.social-icon.msteams {
+    background: url(../img/social/msteams.png) no-repeat;
+}
+.social-icon.x {
+    background: url(../img/social/x.png) no-repeat;
+}
+.social-icon.stackoverflow {
+    background: url(../img/social/stackoverflow.png) no-repeat;
+}
+.social-icon.kaggle {
+    background: url(../img/social/kaggle.png) no-repeat;
+}
+.social-icon.googlescholar {
+    background: url(../img/social/googlescholar.png) no-repeat;
+}
+.social-icon.researchgate {
+    background: url(../img/social/researchgate.png) no-repeat;
+}
+.social-icon.orcid {
+    background: url(../img/social/orcid.png) no-repeat;
 }
 .social-icon:hover {
     background-position: 0 -38px;

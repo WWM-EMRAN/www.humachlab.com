@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<!--
+Customisation of the theme: HumachLab
+Version: 1.0.0
+Author: Emran Ali
+Website: https://www.humachlab.com & https://emran.humachlab.com
+Contact: wwm.emran@gmail.com
+------------------------------------------------------
+Template: Metronic Frontend Freebie - Responsive HTML Template Based On Twitter Bootstrap 3.3.4
+Version: 1.0.0
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Like: www.facebook.com/keenthemes
+Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+-->
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+
+<!-- head: site metadata and the necessary file inclusion for styling -->
+<!-- >load static files directory/folder: image-jpg|png|ico, css, js -->
+<!-- Head BEGIN -->
+<head>
+    <!-- favicon START -->
+    <link rel="icon" type="image/png" href="assets/myresources/icons/HML-FavIcon-red.png" id="fav-icon">
+    <!-- favicon END -->
+
+    <!-- common metadata, style sheets and fonts -->
+    <div data-include="components/head.html"></div>
+
+    <!-- title START -->
+    <title> HumachLab - Home </title>
+    <!-- title END -->
+
+    <!-- Theme styles START -->
+    <link href="assets/theme/corporate/css/themes/red.css" rel="stylesheet" id="style-color">
+    <!-- Theme styles END -->
+</head>
+<!-- Head END -->
+
+
+<!-- Body BEGIN -->
+<body class="corporate">
+
+
+
+<!-- preload: preloader animation when the site is loading -->
+<!-- >load static files directory/folder: image-jpg|png|ico, css, js -->
+<div id="preloader">
+    <div class="preloader-content">
+        <img src="assets/myresources/icons/HML-FavIcon-black.png" alt="HumachLab Logo" id="preloadLogo">
+        <div class="dot-loader">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- color panel: sliding color panel to change theme color instantly -->
+<!-- >load static files directory/folder: image-jpg|png|ico, css, js -->
+<div data-include="components/theme_color_selector.html"></div>
+
+
+<!--&lt;!&ndash; pre-header: section at the very top of the page, before the header of the page &ndash;&gt;-->
+<!--&lt;!&ndash; >load static files directory/folder: image-jpg|png|ico, css, js &ndash;&gt;-->
+<!--<div data-include="components/pre_header.html"></div>-->
+
+
+<!--&lt;!&ndash; header: section at the very top of the page, after the pre-header of the page, contains the navigation bar &ndash;&gt;-->
+<!--&lt;!&ndash; >load static files directory/folder: image-jpg|png|ico, css, js &ndash;&gt;-->
+<!--<div data-include="components/header.html"></div>-->
+<!-- BEGIN HEADER -->
+<div class="header">
+    <div class="container">
+        <a class="site-logo" href="index.html"><img src="assets/myresources/logos/HML-Logo-red.png" alt="HumachLab"></a>
+
+        <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
+
+        <!-- BEGIN NAVIGATION -->
+        <div class="header-navigation pull-right font-transform-inherit">
+            <ul>
+                <li class="dropdown-toggle">
+                    <a href="index.html"><i class="fa fa-home"></i> Home</a>
+                </li>
+
+                <li class="dropdown dropdown-megamenu">
+                    <a class="dropdown-toggle" href="#"><i class="fa fa-server"></i> Services</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="header-navigation-content">
+                                <div class="row">
+                                    <div class="col-md-4 header-navigation-col">
+                                        <h4><i class="fa fa-flask"></i> Research</h4>
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-brain"></i> Artificial Intelligence (AI)</a></li>
+                                            <li><a href="#"><i class="fa fa-robot"></i> Machine Learning (ML)</a></li>
+                                            <li><a href="#"><i class="fa fa-network-wired"></i> Deep Learning (DL)</a></li>
+                                            <li><a href="#"><i class="fa fa-magic"></i> Generative AI (GenAI)</a></li>
+                                            <li><a href="#"><i class="fa fa-user-gear"></i> Agentic AI (AgAI)</a></li>
+                                            <li><a href="#"><i class="fa fa-heartbeat"></i> Health Informatics</a></li>
+                                            <li><a href="#"><i class="fa fa-wave-square"></i> Signal Processing</a></li>
+                                            <li><a href="#"><i class="fa fa-shield-alt"></i> System Security</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-4 header-navigation-col">
+                                        <h4><i class="fa fa-graduation-cap"></i> Education</h4>
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-book"></i> Course</a></li>
+                                            <li><a href="#"><i class="fa fa-chalkboard-teacher"></i> Training</a></li>
+                                            <li><a href="#"><i class="fa fa-user-graduate"></i> One-to-one Session</a></li>
+                                            <li><a href="#"><i class="fa fa-briefcase"></i> Internship</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-4 header-navigation-col">
+                                        <h4><i class="fa fa-code"></i> Development</h4>
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-lightbulb"></i> AI Solution</a></li>
+                                            <li><a href="#"><i class="fa fa-chart-line"></i> Business Solution</a></li>
+                                            <li><a href="#"><i class="fa fa-globe"></i> Web</a></li>
+                                            <li><a href="#"><i class="fa-brands fa-apple"></i> Apple Application (iOS)</a></li>
+                                            <li><a href="#"><i class="fa-brands fa-android"></i> Android</a></li>
+                                            <li><a href="#"><i class="fa fa-crop"></i> Image Clipping</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-target="#" href="#"><i class="fa fa-user"></i> About Us</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><i class="fa fa-brain"></i> About HumachLab</a></li>
+                        <li><a href="#"><i class="fa fa-palette"></i> Portfolio</a></li>
+                        <li><a href="#"><i class="fa fa-user-friends"></i> Teams</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown-toggle">
+                    <a class="dropdown-toggle" data-target="#" href="#"><i class="fa fa-newspaper"></i> News</a>
+                </li>
+
+                <li class="dropdown-toggle">
+                    <a class="dropdown-toggle" data-target="#" href="#"><i class="fa fa-address-book"></i> Contact</a>
+                </li>
+
+                <!-- BEGIN TOP SEARCH -->
+                <li class="menu-search">
+                    <span class="sep"></span>
+                    <i class="fa fa-search search-btn"></i>
+                    <div class="search-box">
+                        <form action="#" method="POST" role="form" class="content-search-view2">
+                            <div class="input-group">
+                                <input type="text" name="search_query" placeholder="Search" class="form-control" required>
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="submit">Search</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+                <!-- END TOP SEARCH -->
+            </ul>
+        </div>
+        <!-- END NAVIGATION -->
+    </div>
+</div>
+<!-- Header END -->
+
+
+<!-- hero: hero slider section for the landing (index) page only that contains the main theme and message of the site -->
+<!-- >load static files directory/folder: image-jpg|png|ico, css, js -->
+<div data-include="components/hero.html"></div>
+
+
+<!-- content: main content of the page including breadcrumb path -->
+<div class="main">
+    <div class="container">
+
+        <!-- breadcrumb: breadcrumb/path section to show the navigation from a root/sub-root link -->
+
+
+        <!-- content: main content of the page -->
+
+        <!-- BEGIN COMING SOON BLOCK -->
+        <div class="row quote-v1 margin-bottom-30" style="background-color: red">
+            <div class="col-md-9">
+                <span><i class="fa fa-info-circle"></i> Complete site is coming soon... </span>
+            </div>
+        </div>
+        <!-- END COMING SOON BLOCK -->
+
+
+
+        <!-- BEGIN SERVICE BOX -->
+        <div class="row service-box margin-bottom-40">
+            <div class="col-md-4 col-sm-4">
+                <div class="service-box-heading">
+<!--                    <em><i class="fa fa-eye blue"></i></em>-->
+                    <em><i class="fa fa-globe blue"></i></em>
+                    <span>Vision</span>
+                </div>
+                <p>
+<!--                    To shape a future where intelligent systems ethically augment human capability and solve critical global challenges.<br>-->
+                    <b>To advance intelligent systems that meaningfully augment human capability, improve healthcare, strengthen digital security, and drive sustainable innovation across industries.</b> <br>
+<!--                    HumachLab envisions a future where Artificial Intelligence is not merely automated computation, but a trusted, explainable, and ethically aligned extension of human intelligence. We aim to become a globally recognized research and innovation laboratory bridging academic discovery with real-world transformation.-->
+                    HumachLab envisions a future where Artificial Intelligence is not merely automated computation, but a trusted, transparent, and ethically aligned extension of human intelligence. We believe intelligent systems should augment human reasoning, enhance decision-making, and operate with accountability and fairness. In our vision, AI is explainable, responsible, and designed with a deep awareness of societal needs and long-term impact.
+                    We strive to advance technologies that meaningfully improve healthcare, strengthen digital security, and support innovation across disciplines. By fostering interdisciplinary research and responsible development, HumachLab seeks to ensure that scientific discovery translates into practical, real-world solutions.
+                    Our goal is to become a globally recognized research and innovation laboratory that bridges academic excellence with transformative application-connecting theory with practice, and innovation with impact.
+                </p>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="service-box-heading">
+<!--                    <em><i class="fa fa-bullseye red"></i></em>-->
+                    <em><i class="fa fa-rocket red"></i></em>
+                    <span>Mission</span>
+                </div>
+                <p>
+<!--                    To advance AI research, deliver transformative education, and develop intelligent solutions that bridge academic insight with real-world impact.<br> -->
+                    <b>Our mission is to conduct impactful AI research, deliver high-quality education, and build practical intelligent solutions that solve complex real-world problems.</b> <br>
+                    We pursue this mission through:
+                    <ul>
+                        <li>Cutting-edge research in Artificial Intelligence, Machine Learning, Generative AI, Agentic AI, and Health Informatics</li>
+                        <li>Evidence-based and industry-relevant education & training programs</li>
+                        <li>Development of scalable, secure, and intelligent digital systems</li>
+                        <li>Collaboration with academic institutions, healthcare professionals, and technology partners</li>
+                        <li>Promoting ethical, interpretable, and human-centered AI practices</li>
+                    </ul>
+                    HumachLab exists to convert research insights into deployable innovation.
+                </p>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="service-box-heading">
+                    <em><i class="fa fa-compass green"></i></em>
+<!--                    <em><i class="fa fa-balance-scale green"></i></em>-->
+                    <span>Core Values</span>
+                </div>
+                <p>
+                    <b>We are with the strong core values to serve the societies around the globe for a better future. </b>
+<!--                    Integrity • Human-Centered Design • Ethical AI • Collaboration • Innovation • Impact <br>-->
+                    <ol>
+                        <li><b>Research Integrity:</b> We are committed to scientific rigor, transparency, reproducibility, and responsible data practices in all our research endeavors.</li>
+                        <li><b>Human-Centered Innovation:</b> Technology should empower people. We design AI systems that are explainable, accessible, and aligned with human needs.</li>
+                        <li><b>Ethical Responsibility:</b> We prioritize fairness, privacy, security, and responsible AI deployment in both research and development.</li>
+                        <li><b>Interdisciplinary Collaboration:</b> Complex problems require cross-domain expertise. We foster collaboration across AI, healthcare, engineering, and business disciplines.</li>
+                        <li><b>Translational Impact:</b> Research must not remain theoretical. We actively bridge academic research with industry implementation and practical solutions.</li>
+                        <li><b>Continuous Learning:</b> Innovation thrives on curiosity. We cultivate a culture of lifelong learning, mentorship, and intellectual growth.</li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+        <!-- END SERVICE BOX -->
+
+        <!-- BEGIN SERVICES: WHAT WE DO (HumachLab) -->
+        <div class="row margin-bottom-40">
+          <div class="col-md-12 text-center">
+<!--            <h2 class="margin-bottom-10">What We Do</h2>-->
+              <h2 class="margin-bottom-10"><i class="fa fa-server"></i> Services</h2>
+            <p class="margin-bottom-5">
+              HumachLab operates through three pillars: research innovation, practical education, and real-world development.
+            </p>
+          </div>
+        </div>
+
+        <div class="row margin-bottom-40 front-steps-wrapper front-steps-count-3 hml-whatwedo">
+          <!-- Research -->
+          <div class="col-md-4 col-sm-4 front-step-col">
+            <div class="front-step front-step1">
+              <div class="hml-step-icon">
+                <i class="fa fa-flask"></i>
+              </div>
+              <h2>Research</h2>
+              <p>
+                Cutting-edge work across artificial intelligence (AI), machine learning (ML), deep learning (DL), Generative AI (GenAI), Agentic AI, Health Informatics, Signal Processing, and System Security.
+                Bridging academic discovery with applied impact.
+              </p>
+
+              <div class="hml-step-links">
+                <a class="btn btn-primary btn-sm" href="https://research.humachlab.com/" target="_blank">
+                  Explore Research <i class="fa fa-angle-right"></i>
+                </a>
+                <div class="hml-mini-links">
+                  <a href="#">Artificial Intelligence (AI)</a> |
+                  <a href="#">Machine Learning (ML)</a> |
+                  <a href="#">Deep Learning (DL)</a> |
+                  <a href="#">Generative AI (GenAI)</a> |
+                  <a href="#">Agentic AI (AgAI)</a> |
+                  <a href="#">Health Informatics</a> |
+                  <a href="#">Signal Processing</a> |
+                  <a href="#">System Security</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education & Training -->
+          <div class="col-md-4 col-sm-4 front-step-col">
+            <div class="front-step front-step2">
+              <div class="hml-step-icon">
+                <i class="fa fa-graduation-cap"></i>
+              </div>
+              <h2>Education &amp; Training</h2>
+              <p>
+                Academic and professional courses, hands-on training, one-to-one mentorship, and internships designed for students, researchers, and professionals from across diverse.
+                Built from real research and industry practice for social impact.
+              </p>
+
+              <div class="hml-step-links">
+                <a class="btn btn-primary btn-sm" href="#">
+                  View Programs <i class="fa fa-angle-right"></i>
+                </a>
+                <div class="hml-mini-links">
+                  <a href="#">Course</a> |
+                  <a href="#">Training</a> |
+                  <a href="#">One-to-one Session</a> |
+                  <a href="#">Internship</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Development -->
+          <div class="col-md-4 col-sm-4 front-step-col">
+            <div class="front-step front-step3">
+              <div class="hml-step-icon">
+                <i class="fa fa-cogs"></i>
+              </div>
+              <h2>Development</h2>
+              <p>
+                Building deployable AI and digital solutions- AI systems, business automation, web platforms, and mobile applications.
+                Translating ideas into production-ready outcomes.
+              </p>
+
+              <div class="hml-step-links">
+                <a class="btn btn-primary btn-sm" href="#">
+                  See Solutions <i class="fa fa-angle-right"></i>
+                </a>
+                <div class="hml-mini-links">
+                  <a href="#">AI Solution</a> |
+                  <a href="#">Business Solution</a> |
+                  <a href="#">Web</a> |
+                  <a href="#">Apple Application (iOS)</a> |
+                  <a href="#">Android</a> |
+                  <a href="#">Image Clipping</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END SERVICES: WHAT WE DO (HumachLab) -->
+
+        <!-- BEGIN BLOCKQUOTE BLOCK -->
+        <div class="row quote-v1 margin-bottom-30">
+            <div class="col-md-9">
+                <span>Join our Research Lab (Humach Research) for collaboration... </span>
+            </div>
+            <div class="col-md-3 text-right">
+                <a class="btn-transparent" href="https://research.humachlab.com/"
+                   target="_blank"><i class="fa fa-rocket margin-right-10"></i>Visit <b>Humach Research</b></a>
+            </div>
+        </div>
+        <!-- END BLOCKQUOTE BLOCK -->
+
+        <!-- BEGIN INNOVATION FOCUS AREAS (HumachLab) -->
+        <div class="row margin-bottom-40">
+          <div class="col-md-12 text-center">
+            <h2 class="margin-bottom-10"><i class="fa fa-lightbulb"></i> Innovation Focus Areas</h2>
+            <p class="margin-bottom-5">
+              Our work spans core AI foundations and applied domains. Designed to be trustworthy, scalable, and impactful.
+            </p>
+          </div>
+        </div>
+
+        <div class="row mix-block margin-bottom-40 hml-innovation-tabs">
+          <!-- TABS -->
+          <div class="col-md-12 tab-style-1">
+            <ul class="nav nav-tabs">
+              <li class="active">
+                <a href="#hml-focus-1" data-toggle="tab">
+                  <i class="fa fa-balance-scale margin-right-5"></i> Explainable &amp; Ethical AI
+                </a>
+              </li>
+              <li>
+                <a href="#hml-focus-2" data-toggle="tab">
+                  <i class="fa fa-heartbeat margin-right-5"></i> Health &amp; Biomedical AI
+                </a>
+              </li>
+              <li>
+                <a href="#hml-focus-3" data-toggle="tab">
+                  <i class="fa fa-robot margin-right-5"></i> Generative &amp; Agentic Systems
+                </a>
+              </li>
+              <li>
+                <a href="#hml-focus-4" data-toggle="tab">
+                  <i class="fa fa-industry margin-right-5"></i> Applied AI for Industry
+                </a>
+              </li>
+            </ul>
+
+            <div class="tab-content">
+              <!-- TAB 1 -->
+              <div class="tab-pane row fade in active" id="hml-focus-1">
+                <div class="col-md-4 col-sm-4">
+                    <a data-rel="fancybox-button" title="Explainable &amp; Ethical AI" class="fancybox-button" href="assets/myresources/general/explainable-ethical-ai.png">
+                      <img alt="Explainable &amp; Ethical AI" src="assets/myresources/general/explainable-ethical-ai.png" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-md-8 col-sm-8">
+                  <h4 class="margin-bottom-10">Explainable &amp; Ethical AI</h4>
+                  <p class="margin-bottom-10">
+                    We prioritize trust in AI by designing models and systems that are interpretable, transparent, and aligned with ethical standards.
+                    Our focus includes explainability, fairness, privacy-preserving learning, and robust evaluation.
+                  </p>
+
+                  <ul class="list-unstyled margin-bottom-15">
+                    <li><i class="fa fa-check margin-right-5"></i> Model explainability & interpretability (global + local)</li>
+                    <li><i class="fa fa-check margin-right-5"></i> Bias awareness, fairness and responsible deployment</li>
+                    <li><i class="fa fa-check margin-right-5"></i> Reliable evaluation protocols and reproducible research</li>
+                  </ul>
+
+                  <a class="btn btn-primary btn-sm" href="https://research.humachlab.com/" target="_blank">
+                    Explore AI Research <i class="fa fa-angle-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- TAB 2 -->
+              <div class="tab-pane row fade" id="hml-focus-2">
+                <div class="col-md-8 col-sm-8">
+                  <h4 class="margin-bottom-10">Health &amp; Biomedical AI</h4>
+                  <p class="margin-bottom-10">
+                    We develop data-driven intelligence for health and human-centered applications, combining machine learning with signal processing
+                    to support monitoring, prediction, and decision support.
+                  </p>
+
+                  <ul class="list-unstyled margin-bottom-15">
+                    <li><i class="fa fa-check margin-right-5"></i> Time-series & biosignal analytics (EEG/ECG/PPG)</li>
+                    <li><i class="fa fa-check margin-right-5"></i> Health informatics and clinical decision support</li>
+                    <li><i class="fa fa-check margin-right-5"></i> Robust validation & generalization across populations</li>
+                  </ul>
+
+                  <a class="btn btn-primary btn-sm" href="https://research.humachlab.com/" target="_blank">
+                    Explore Health Informatics <i class="fa fa-angle-right"></i>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <a data-rel="fancybox-button" title="Health & Biomedical AI" class="fancybox-button" href="assets/myresources/general/health-biomedical-ai.png">
+                      <img alt="Health & Biomedical AI" src="assets/myresources/general/health-biomedical-ai.png" class="img-responsive">
+                    </a>
+                </div>
+              </div>
+
+              <!-- TAB 3 -->
+              <div class="tab-pane row fade" id="hml-focus-3">
+                <div class="col-md-4 col-sm-4">
+                    <a data-rel="fancybox-button" title="Generative & Agentic Systems" class="fancybox-button" href="assets/myresources/general/generative-agentic-sys.png">
+                      <img alt="Generative & Agentic Systems" src="assets/myresources/general/generative-agentic-sys.png" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-md-8 col-sm-8">
+                  <h4 class="margin-bottom-10">Generative &amp; Agentic Systems</h4>
+                  <p class="margin-bottom-10">
+                    We explore modern generative models and multi-agent systems that can plan, reason, and assist complex workflows.
+                    This includes GenAI applications, retrieval-augmented pipelines, and safe automation.
+                  </p>
+
+                  <ul class="list-unstyled margin-bottom-15">
+                    <li><i class="fa fa-check margin-right-5"></i> Generative AI pipelines for content, insights, and assistance</li>
+                    <li><i class="fa fa-check margin-right-5"></i> Agentic AI for task planning and tool-using systems</li>
+                    <li><i class="fa fa-check margin-right-5"></i> Governance and safety for autonomous workflows</li>
+                  </ul>
+
+                  <a class="btn btn-primary btn-sm" href="https://research.humachlab.com/" target="_blank">
+                    Explore GenAI <i class="fa fa-angle-right"></i>
+                  </a>
+                  <a class="btn btn-default btn-sm" href="https://research.humachlab.com/" target="_blank">
+                    Explore AgAI <i class="fa fa-angle-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- TAB 4 -->
+              <div class="tab-pane row fade" id="hml-focus-4">
+                <div class="col-md-8 col-sm-8">
+                  <h4 class="margin-bottom-10">Applied AI for Industry</h4>
+                  <p class="margin-bottom-10">
+                    We translate research into production-ready solutions—automation, analytics platforms, and AI-powered products.
+                    Our work emphasizes scalability, maintainability, and measurable business outcomes.
+                  </p>
+
+                  <ul class="list-unstyled margin-bottom-15">
+                    <li><i class="fa fa-check margin-right-5"></i> AI solution development and model deployment</li>
+                    <li><i class="fa fa-check margin-right-5"></i> Business automation and intelligent workflow systems</li>
+                    <li><i class="fa fa-check margin-right-5"></i> Web and mobile applications for real users</li>
+                  </ul>
+
+                  <a class="btn btn-primary btn-sm" href="#">
+                    AI Solutions <i class="fa fa-angle-right"></i>
+                  </a>
+                  <a class="btn btn-default btn-sm" href="#">
+                    Business Solutions <i class="fa fa-angle-right"></i>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <a data-rel="fancybox-button" title="Applied AI for Industry" class="fancybox-button" href="assets/myresources/general/applied-ai-for-industry.png">
+                      <img alt="Applied AI for Industry" src="assets/myresources/general/applied-ai-for-industry.png" class="img-responsive">
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END TABS -->
+        </div>
+        <!-- END INNOVATION FOCUS AREAS (HumachLab) -->
+
+        <!-- BEGIN IMPACT METRICS (HumachLab) -->
+        <div class="row margin-bottom-20">
+          <div class="col-md-12 text-center">
+            <h2 class="margin-bottom-10"><i class="fa fa-meteor"></i> Impact Metrics</h2>
+            <p class="margin-bottom-5">
+              A snapshot of our growing research, learning, and development footprint.
+            </p>
+          </div>
+        </div>
+
+        <div class="row margin-bottom-40 hml-impact-metrics">
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="hml-impact-card">
+              <div class="hml-impact-icon"><i class="fa fa-flask"></i></div>
+              <div class="hml-impact-number" data-count="5">0</div>
+              <div class="hml-impact-label">Active Projects</div>
+              <div class="hml-impact-sub">Research & applied builds</div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="hml-impact-card">
+              <div class="hml-impact-icon"><i class="fa fa-book"></i></div>
+              <div class="hml-impact-number" data-count="15">0</div>
+              <div class="hml-impact-label">Publications & Reports</div>
+              <div class="hml-impact-sub">Papers, preprints, writeups</div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="hml-impact-card">
+              <div class="hml-impact-icon"><i class="fa fa-graduation-cap"></i></div>
+              <div class="hml-impact-number" data-count="9">0</div>
+              <div class="hml-impact-label">Learners Supported</div>
+              <div class="hml-impact-sub">Courses, training, mentorship, internship</div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="hml-impact-card">
+              <div class="hml-impact-icon"><i class="fa fa-handshake"></i></div>
+              <div class="hml-impact-number" data-count="4">0</div>
+              <div class="hml-impact-label">Collaborations</div>
+              <div class="hml-impact-sub">Academic & industry partners</div>
+            </div>
+          </div>
+        </div>
+        <!-- END IMPACT METRICS (HumachLab) -->
+
+        <!-- BEGIN RECENT WORKS -->
+        <div class="row recent-work margin-bottom-40">
+            <div class="col-md-3">
+                <h2><a href="#"><i class="fa fa-tools"></i> Recent Works</a></h2>
+                <p>A showcase of our latest contributions across research and development, turning complex AI concepts into functional, real-world solutions.</p>
+            </div>
+            <div class="col-md-9">
+                <div class="owl-carousel owl-carousel3">
+
+                    <div class="recent-work-item">
+                        <em>
+                            <img src="assets/myresources/general/explainable-ethical-ai.png" alt="Explainable & Ethical AI" class="img-responsive">
+                            <a href="https://research.humachlab.com/" target="_blank"><i class="fa fa-link"></i></a>
+                            <a href="assets/myresources/general/explainable-ethical-ai.png" class="fancybox-button"
+                               title="Explainable & Ethical AI" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
+                        </em>
+                        <a class="recent-work-description" href="javascript:;">
+                            <strong>Explainable &amp; Ethical AI</strong>
+                            <b>Trustworthy Research</b>
+                        </a>
+                    </div>
+
+                    <div class="recent-work-item">
+                        <em>
+                            <img src="assets/myresources/general/health-biomedical-ai.png" alt="Health & Biomedical AI" class="img-responsive">
+                            <a href="https://research.humachlab.com/" target="_blank"><i class="fa fa-link"></i></a>
+                            <a href="assets/myresources/general/health-biomedical-ai.png" class="fancybox-button"
+                               title="Health & Biomedical AI" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
+                        </em>
+                        <a class="recent-work-description" href="javascript:;">
+                            <strong>Health &amp; Biomedical AI</strong>
+                            <b>Data-Driven Intelligence</b>
+                        </a>
+                    </div>
+
+                    <div class="recent-work-item">
+                        <em>
+                            <img src="assets/myresources/general/generative-agentic-sys.png" alt="Generative & Agentic Systems" class="img-responsive">
+                            <a href="https://research.humachlab.com/" target="_blank"><i class="fa fa-link"></i></a>
+                            <a href="assets/myresources/general/generative-agentic-sys.png" class="fancybox-button"
+                               title="Generative & Agentic Systems" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
+                        </em>
+                        <a class="recent-work-description" href="javascript:;">
+                            <strong>Generative &amp; Agentic Systems</strong>
+                            <b>Modern AI Workflows</b>
+                        </a>
+                    </div>
+
+                    <div class="recent-work-item">
+                        <em>
+                            <img src="assets/myresources/general/applied-ai-for-industry.png" alt="Applied AI for Industry" class="img-responsive">
+                            <a href="https://research.humachlab.com/" target="_blank"><i class="fa fa-link"></i></a>
+                            <a href="assets/myresources/general/applied-ai-for-industry.png" class="fancybox-button"
+                               title="Applied AI for Industry" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
+                        </em>
+                        <a class="recent-work-description" href="javascript:;">
+                            <strong>Applied AI for Industry</strong>
+                            <b>Production-Ready Solutions</b>
+                        </a>
+                    </div>
+
+                    <div class="recent-work-item">
+                        <em>
+                            <img src="assets/myresources/general/explainable-ethical-ai.png" alt="AI Research" class="img-responsive">
+                            <a href="https://research.humachlab.com/" target="_blank"><i class="fa fa-link"></i></a>
+                            <a href="assets/myresources/general/explainable-ethical-ai.png" class="fancybox-button"
+                               title="Transparent AI Models" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
+                        </em>
+                        <a class="recent-work-description" href="javascript:;">
+                            <strong>Interpretable Models</strong>
+                            <b>Ethics in ML</b>
+                        </a>
+                    </div>
+
+                    <div class="recent-work-item">
+                        <em>
+                            <img src="assets/myresources/general/health-biomedical-ai.png" alt="Health Informatics" class="img-responsive">
+                            <a href="https://research.humachlab.com/" target="_blank"><i class="fa fa-link"></i></a>
+                            <a href="assets/myresources/general/health-biomedical-ai.png" class="fancybox-button"
+                               title="Biosignal Analytics" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
+                        </em>
+                        <a class="recent-work-description" href="javascript:;">
+                            <strong>Biosignal Analytics</strong>
+                            <b>Clinical Decision Support</b>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- END RECENT WORKS -->
+
+
+    </div>
+</div>
+
+
+
+<!--&lt;!&ndash; pre-footer: important short note and information for the site: address, contact details, etc &ndash;&gt;-->
+<!--&lt;!&ndash; >load static files directory/folder: image-jpg|png|ico, css, js &ndash;&gt;-->
+<!--<div data-include="components/pre_footer.html"></div>-->
+<!-- BEGIN PRE-FOOTER -->
+<div class="pre-footer">
+    <div class="container">
+        <div class="row">
+            <!-- BEGIN BOTTOM ABOUT BLOCK -->
+            <div class="col-md-4 col-sm-6 pre-footer-col">
+                <h2>About Us</h2>
+                <p>
+                    HumachLab is a "not for profit" organisation involves in Research, Education and Development. It
+                    consists of different independent team
+                    to do funded and unfunded cutting-edge researches, trains enthusiasts for skills development in
+                    tech, and involve in software and application
+                    development using latest tools and technologies.
+                </p>
+            </div>
+            <!-- END BOTTOM ABOUT BLOCK -->
+
+            <!-- BEGIN BOTTOM CONTACTS -->
+            <div class="col-md-4 col-sm-6 pre-footer-col">
+                <h2>Contact Details</h2>
+                <address class="margin-bottom-40">
+                    <strong>HumachLab</strong><br>
+                    Burwood<br>
+                    Victoria-3125, Australia<br>
+
+                    Email: <a href="mailto:info@humachlab.com">info@humachlab.com</a><br>
+                    Gmail: <a href="mailto:humachlab@gmail.com">humachlab@gmail.com</a><br>
+                    MS Teams: <a href="https://teams.microsoft.com/l/chat/0/0?users=humachlab@outlook.com">humachlab@outlook.com</a>
+                </address>
+            </div>
+            <!-- END BOTTOM CONTACTS -->
+
+            <!-- BEGIN SUBSCRIPTION BLOCK -->
+            <div class="col-md-4 col-sm-6 pre-footer-col">
+                <h2>Newsletter</h2>
+                <p>Subscribe to our newsletter and stay up to date with the latest news!</p>
+                <form action="#" method="POST" role="form">
+                    <div class="input-group">
+                        <input type="text" name="newsletter_email" placeholder="youremail@mail.com" class="form-control"
+                               required>
+                        <span class="input-group-btn">
+                    <button class="btn btn-primary" type="submit">Subscribe</button>
+                  </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- END SUBSCRIPTION BLOCK -->
+    </div>
+</div>
+</div>
+<!-- END PRE-FOOTER -->
+
+
+<!-- footer: copyright, powered by, etc -->
+<!-- >load static files directory/folder: image-jpg|png|ico, css, js -->
+<div data-include="components/footer.html"></div>
+
+
+
+<!-- Load javascripts at bottom, this will reduce page load time -->
+<!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
+<div data-include="components/all_scripts_bottom.html"></div>
+<!-- END PAGE LEVEL JAVASCRIPTS -->
+
+<!--<script src="assets/theme/corporate/scripts/hml_static_runtime.js"></script>-->
+<script src="assets/theme/corporate/scripts/preload.js"></script>
+<!--<script src="assets/theme/corporate/scripts/theme_manager.js"></script>-->
+<script src="assets/theme/corporate/scripts/include.js"></script>
+<!--<script src="assets/theme/corporate/scripts/counter.js"></script>-->
+
+</body>
+<!-- END BODY -->
+</html>
+

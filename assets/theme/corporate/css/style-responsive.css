@@ -811,3 +811,25 @@
 	}
 }
 /* END max width 320px */
+
+
+/* Ensure submenu and megamenu icons show on mobile (max-width 1024px) */
+@media (max-width: 1024px) {
+    .header-navigation ul li a > i.fa,
+    .header-navigation .dropdown-menu li > a > i.fa,
+    .header-navigation .header-navigation-col h4 i.fa {
+        display: inline-block !important; /* Force visibility */
+        position: static !important;      /* Keep on the left */
+        margin-right: 10px !important;    /* Space between icon and text */
+        visibility: visible !important;
+        opacity: 1 !important;
+        font-size: 14px !important;       /* Ensure they have a size */
+    }
+
+    /* Adjust padding for headers to accommodate icons on small screens */
+    .dropdown-megamenu .header-navigation-content h4 {
+        display: flex !important;
+        align-items: center;
+        padding-left: 10px !important;
+    }
+}

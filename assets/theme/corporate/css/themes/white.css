@@ -1,14 +1,50 @@
+:root {
+  /* ===========================
+     HumachLab / Metronic Theme Tokens (WHITE-SILVER)
+     - Keep aliases for backward-compatibility
+     - Use --theme-primary for new custom components
+     =========================== */
+
+  /* Primary theme color (WHITE-SILVER) */
+  --theme-primary: #E0E0E0;
+  --theme-primary-light: #EEEEEE;
+  --theme-primary-lighter: #F5F5F5;
+  --theme-on-primary: #FFFFFF;
+
+  /* Shadow token */
+  --theme-shadow: rgba(0, 0, 0, 0.10);
+
+  /* Backward-compatible tokens used in existing theme/custom CSS */
+  --theme-color: var(--theme-primary);
+
+  /* Tokens used by style.css (legacy naming) */
+  --theme-red-base: var(--theme-primary);
+  --theme-red-bright: var(--theme-primary-light);
+  --theme-red-light: var(--theme-primary-lighter);
+  --theme-white: var(--theme-on-primary);
+
+  /* Tokens used by the original red.css (legacy naming) */
+  --red-main: var(--theme-primary);
+  --red-light: var(--theme-primary-light);
+  --red-lighter: var(--theme-primary-lighter);
+  --white: var(--theme-on-primary);
+
+  /* Fonts (kept here so the theme can carry typography tokens if needed) */
+  --font-main: 'Open Sans', Arial, sans-serif;
+  --font-heading: 'Open Sans', sans-serif;
+}
+
 a {
-  color: #fafafa;  /*color-white: ff-ff-ff, f8-f8-f8, ef-ef-ef, 8f-8f-8f, fa-fa-fa,  */
+    color: var(--red-main);
 }
 a:hover {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .pre-header a:hover {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .shop-currencies a.current {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .header-navigation ul > li.active > a,
 .header-navigation ul > li > a:hover,
@@ -16,55 +52,55 @@ a:hover {
 .header-navigation ul > li.open > a,
 .header-navigation ul > li.open > a:hover,
 .header-navigation ul > li.open > a:focus {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .header-navigation li.menu-search i:hover {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .sidebar a:hover {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .sidebar .dropdown.open .dropdown-toggle:hover {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .sidebar-menu .dropdown-menu li > a:hover, .sidebar-menu .dropdown-menu li > a:focus, .sidebar-menu li.active > a, .sidebar-menu li.active > a:hover {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .content-page a:hover,
 .sidebar2 a:hover {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .content-page .link, .content-page .link:hover, .content-page .link:active {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .page-404 .number,
 .page-500 .number,
 .page-error .number {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .content-form-page a:hover {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .quote-v1 a.btn-transparent:hover {
-  background: #fafafa;
+  background: var(--red-main);
 }
 .quote-v2 a.btn-transparent:hover {
-  background: #fafafa;
+  background: var(--red-main);
 }
 .quote-v3 a.btn-transparent:hover {
-  background: #fafafa;
+  background: var(--red-main);
 }
 .recent-work h2 a:hover {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .recent-work .recent-work-item .fa:hover {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .our-clients h2 a:hover {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .front-team h3 strong {
-  color: #fafafa;
+  color: var(--red-main);
 }
 .ecommerce .header-navigation ul > li.active > a,
 .ecommerce .header-navigation ul > li > a:hover,
@@ -72,318 +108,329 @@ a:hover {
 .ecommerce .header-navigation ul > li.open > a,
 .ecommerce .header-navigation ul > li.open > a:hover,
 .ecommerce .header-navigation ul > li.open > a:focus {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .product-item h3 a:hover {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .checkout-page a:hover {
-  color: #fafafa;
+    color: var(--red-main);
 }
 
 
 .langs-block-others:after {
-  border-bottom: 8px solid #fafafa;
+    border-bottom: 8px solid var(--red-light);
 }
 .header-navigation > ul > li.dropdown:hover > a:after {
-  border-bottom: 8px solid #fafafa;
+  border-bottom: 8px solid var(--red-light);
 }
 .header-navigation .dropdown-menu > li > a:hover,
 .header-navigation .dropdown-menu > li.active > a,
 .header-navigation .header-navigation-content .header-navigation-col li > a:hover,
 .header-navigation .header-navigation-content .header-navigation-col li.active > a {
-  background: #fafafa;
-  color: #fff;
+  background: var(--red-main);
+  color: var(--white);
 }
 .header-navigation .dropdown-menu .header-navigation-content-ext li > a:hover,
 .header-navigation .dropdown-menu .header-navigation-content-ext li.active > a {
-  background: #fff;
-  color: #fafafa;
+  background: var(--white);
+  color: var(--red-main);
 }
 .header-navigation .search-box:after {
-  border-bottom: 8px solid #fafafa;
+    border-bottom: 8px solid var(--red-light);
 }
 .header-navigation .search-box {
-  border-top: solid 2px #fafafa;
+    border-top: solid 2px var(--red-light);
 }
 .title-wrapper h1 span {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .breadcrumb > .active {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .form-info h2 em {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .nav-tabs {
-  border-color: #fafafa;
+    border-color: var(--red-main);
 }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-  background: #fafafa;
+    background: var(--red-main);
 }
 .content-search h1 em {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .recent-work .recent-work-item:hover a.recent-work-description {
-  background: #fafafa;
+    background: var(--red-main);
 }
 .testimonials-v1 blockquote:after {
-  background-color: #fafafa;
+  background-color: var(--red-main);
 }
 .testimonials-v1 span.testimonials-name {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .search-result-item h4 a {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .top-cart-content:after {
-  border-bottom: 8px solid #fafafa;
+    border-bottom: 8px solid var(--red-light);
 }
 .goods-data a,
 .checkout-page .checkout-description a {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .product-page .review a {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-    background: #fafafa;
-    color: #fff;
+    background: var(--red-main);
+    color: var(--white);
 }
 .list-view-sorting a {
-  background: #fff;
-  color: #fafafa;
+    background: var(--white);
+    color: var(--red-main);
 }
-
-
 
 ::-moz-selection {
-  color: #fff;
-  background: #fafafa;
+  color: var(--white);
+  background: var(--red-main);
 }
 ::selection {
-  color: #fff;
-  background: #fafafa;
+  color: var(--white);
+  background: var(--red-main);
 }
 .steps-block ::-moz-selection {
-  color: #fafafa;
-  background: #fff;
+  color: var(--red-main);
+  background: var(--white);
 }
 .steps-block ::selection {
-  color: #fafafa;
-  background: #fff;
+  color: var(--red-main);
+  background: var(--white);
 }
-
-
 
 .owl-buttons .owl-prev:hover {
-    background-color: #fafafa;
+    background-color: var(--red-main);
 }
 .owl-buttons .owl-next:hover {
-    background-color: #fafafa;
+    background-color: var(--red-main);
 }
 .steps-block-red {
-  background: #fafafa;
+    background: var(--red-main);
 }
 .pre-footer .photo-stream img:hover {
-  border-color: #fafafa;
+    border-color: var(--red-main);
 }
 .pre-footer-light dl.f-twitter dd a {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .pre-footer-light address a {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .testimonials-v1 .left-btn:hover {
-    background-color: #fafafa;
+    background-color: var(--red-main);
 }
 .testimonials-v1 .right-btn:hover {
-    background-color: #fafafa;
+    background-color: var(--red-main);
 }
 .blog-tags li i,
 .blog-info li i {
-  color: #fafafa;
+  color: var(--red-main);
 }
 .blog-posts .more,
 .blog-sidebar .more {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .recent-news h3 a {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .blog-photo-stream li img:hover {
-  border-color: #fafafa;
+  border-color: var(--red-main);
 }
 .blog-tags li a:hover {
-  color: #fff;
-  background: #fafafa;
+  color: var(--white);
+  background: var(--red-main);
 }
 .blog-tags li a:hover:after {
-  border-left-color: #fafafa;
+  border-left-color: var(--red-main);
 }
 .sidebar-categories li > a:hover,
 .sidebar-categories li.active > a,
 .sidebar-categories li.active:hover > a {
-  color: #fafafa;
+  color: var(--red-main);
 }
 .blog-item blockquote {
-  border-color: #fafafa;
+  border-color: var(--red-main);
 }
 .blog-item h4.media-heading span a {
-    color: #fafafa;
+    color: var(--red-main);
 }
 .front-steps-wrapper .front-step1 {
-  background: #fafafa;
+    background: var(--red-main);
 }
 .pricing-active {
-  border: 3px solid #fafafa;
-  box-shadow: 7px 7px rgba(100, 174, 217, 0.2);
+  border: 3px solid var(--red-main);
+  box-shadow: 7px 7px var(--red-shadow);
 }
 .pricing:hover {
-  border: 3px solid #fafafa;
+  border: 3px solid var(--red-main);
 }
 .pricing:hover h4 {
-  color: #fafafa;
+  color: var(--red-main);
 }
 .pricing-head h3 {
-  background: #fafafa;
+  background: var(--red-main);
 }
 .pricing-head-active h4 {
-  color: #fafafa;
+  color: var(--red-main);
 }
 .pricing-content li i {
-  color: #fafafa;
+  color: var(--red-main);
 }
 .top-cart-block .fa-shopping-cart {
-  background: #fafafa;
+    background: var(--red-main);
 }
 .product-item .btn:hover {
-  background: #fafafa;
+    background: var(--red-light);
 }
 .pi-price {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .product-item .add2cart:hover {
-  color: #fff !important;
-  background: #fafafa !important;
-  border-color: #fafafa;
+    color: var(--white) !important;
+    background: var(--red-main) !important;
+    border-color: var(--red-main);
 }
 .goods-page-price strong,
 .goods-page-total strong,
 .checkout-price strong,
 .checkout-total strong {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .shopping-total strong,
 .checkout-total-block strong {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .compare-item strong {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .sidebar-products .price {
-    color: #fafafa;
+    color: var(--red-main);
 }
 .price-availability-block .price strong {
-  color: #fafafa;
+    color: var(--red-main);
 }
 
+
 .require {
-  color: #fafafa;
+    color: var(--red-main);
 }
 .content-form-page .form-control:focus {
-  border: solid 1px #fafafa;
+    border: solid 1px var(--red-main);
 }
 .content-search input:focus {
-  border: solid 1px #fafafa;
+    border: solid 1px var(--red-main);
 }
 
 .btn-primary {
-  background: #fafafa;
+    background: var(--red-main);
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  background: #fafafa;
+    background: var(--red-light);
 }
 
 .header-navigation .dropdown-menu > li:first-child {
-    border-top: 2px solid #fafafa;
+    border-top: 2px solid var(--red-light);
 }
 .front-steps-wrapper .front-step1:after {
-    border-left: 15px solid #83BEE0;
+    border-left: 15px solid var(--red-lighter);
 }
 
 .del-goods:hover,
 .add-goods:hover {
-  background-color: #83BEE0;
+    background-color: var(--red-main);
 }
 
 .sidebar a:hover > .fa-angle-down {
-  background-position: -22px 0;
+    background-position: -11px 0;
 }
 .sidebar .collapsed:hover > .fa-angle-down {
-  background-position: -22px -37px;
+    background-position: -11px -37px;
 }
-
 .top-cart-content {
-  border-top: solid 2px #83BEE0;
+    border-top: solid 2px var(--red-light);
 }
 
 .front-skills .progress-bar {
-  background: #83BEE0;
+  background: var(--red-main);
 }
 
 .service-box-v1:hover {
-  background: #83BEE0;
+  background: var(--red-light);
 }
 
 .header .mobi-toggler:hover {
-  background-color: #83BEE0;
-  border-color: #83BEE0;
+  background-color: var(--red-main);
+  border-color: var(--red-main);
 }
 
 @media (max-width: 1024px) {
-  .header .header-navigation li > a:hover,
-  .header .header-navigation li.active > a,
-  .header .header-navigation li.open > a:hover {
-    color: #83BEE0 !important;
-  }
+    .header .header-navigation li > a:hover,
+    .header .header-navigation li.active > a,
+    .header .header-navigation li.open > a:hover {
+       color: var(--red-main) !important;
+    }
 }
 
 .faq-tabbable {
-  border-left: solid 2px #83BEE0;
+  border-left: solid 2px var(--red-main);
 }
 .faq-tabbable li:hover a,
 .faq-tabbable li.active a{
-  background: #83BEE0;
+  background: var(--red-main);
 }
 .faq-tabbable li.active:after {
-  border-left: 6px solid #83BEE0;
+  border-left: 6px solid var(--red-main);
 }
 
 .mix-filter li:hover, .mix-filter li.active {
-    background: #83BEE0;
-    color: #fff;
+    background: var(--red-main);
+    color: var(--white);
 }
 .mix-grid .mix .mix-details {
-  background: #83BEE0;
+    background: var(--red-main);
 }
 .mix-grid .mix a.mix-link,
 .mix-grid .mix a.mix-preview {
-  background: #1ab8db;
+  background: var(--red-light);
 }
 .langs-block-others {
-  border-top: solid 2px #83BEE0;
+    border-top: solid 2px var(--red-light);
 }
-
 .brands .owl-buttons .owl-prev:hover {
-    background-position: 18px -325px;
+    background-position: 18px -217px;
 }
 .brands .owl-buttons .owl-next:hover {
-    background-position: -249px -325px;
+    background-position: -249px -217px;
 }
 .header-navigation ul > li.active > a/*,
 .ecommerce .header-navigation ul > li.active > a*/ {
-  border-bottom: 2px solid #83BEE0;
+    border-bottom: 2px solid var(--red-main);
+}
+
+
+/* ===========================
+   HumachLab custom components using theme color
+   =========================== */
+
+/* Preloader dots follow current theme */
+.dot-loader span {
+  background-color: var(--theme-primary);
+}
+
+/* Impact metrics (numbers + icons) follow current theme */
+.hml-impact-metrics .hml-impact-number,
+.hml-impact-metrics .hml-impact-icon {
+  color: var(--theme-primary);
 }
