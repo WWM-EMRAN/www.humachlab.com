@@ -3663,3 +3663,103 @@ Styler Panel
     font-size:30px;
   }
 }
+
+
+/* HumachLab Team Card Theming */
+/*.hml-team-card {*/
+/*    border: 1px solid #eee !important;*/
+/*    border-bottom: 3px solid var(--theme-primary) !important; !* Themed bottom border *!*/
+/*    transition: all 0.3s ease-in-out;*/
+/*    padding: 15px !important;*/
+/*    text-align: center;*/
+/*    background: #fff;*/
+/*    border-radius: 8px !important;*/
+/*}*/
+
+/*.hml-team-card:hover {*/
+/*    box-shadow: 0 10px 30px var(--theme-shadow) !important;*/
+/*    transform: translateY(-5px);*/
+/*    border-color: var(--theme-primary) !important;*/
+/*}*/
+
+/*.hml-team-card h3 strong {*/
+/*    color: var(--theme-primary); !* Name takes theme color *!*/
+/*    display: block;*/
+/*    margin-bottom: 5px;*/
+/*}*/
+
+/*.hml-team-img-wrap {*/
+/*    margin-bottom: 15px;*/
+/*    overflow: hidden;*/
+/*    border-radius: 50%;*/
+/*    width: 150px;*/
+/*    height: 150px;*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*    border: 3px solid #eee;*/
+/*    transition: border-color 0.3s;*/
+/*}*/
+
+/*.hml-team-card:hover .hml-team-img-wrap {*/
+/*    border-color: var(--theme-primary);*/
+/*}*/
+
+/*!* Fix for social icons to ensure they don't break the themed layout *!*/
+/*.hml-team-card .social-icons {*/
+/*    padding: 0;*/
+/*    margin-top: 15px;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    gap: 5px;*/
+/*}*/
+
+
+/* Container fix for equal height columns */
+.hml-team-section .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Card fix for equal height */
+.hml-team-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Stretch to fill the column height */
+    border: 1px solid #eee !important;
+    border-bottom: 3px solid var(--theme-primary) !important;
+    transition: all 0.3s ease-in-out;
+    padding: 20px !important;
+    text-align: center;
+    background: #fff;
+    border-radius: 8px !important;
+    margin-bottom: 0; /* Let flex handle spacing */
+}
+
+/* Ensure the description takes up available space to push icons down */
+.hml-team-card p {
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+
+.hml-team-card:hover {
+    box-shadow: 0 10px 30px var(--theme-shadow) !important;
+    transform: translateY(-5px);
+}
+
+.hml-team-img-wrap {
+    flex-shrink: 0; /* Prevent image wrap from shrinking */
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 15px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid #eee;
+}
+
+.hml-team-card .social-icons {
+    margin-top: auto; /* Pushes icons to the bottom of the card */
+    padding: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
