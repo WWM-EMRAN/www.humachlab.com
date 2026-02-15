@@ -10,6 +10,7 @@
   --theme-primary-light: #EEEEEE;
   --theme-primary-lighter: #F5F5F5;
   --theme-on-primary: #FFFFFF;
+  /*--theme-on-primary: #000000;*/
 
   /* Shadow token */
   --theme-shadow: rgba(0, 0, 0, 0.10);
@@ -269,7 +270,7 @@ a:hover {
 }
 .pricing-active {
   border: 3px solid var(--red-main);
-  box-shadow: 7px 7px var(--red-shadow);
+  box-shadow: 7px 7px var(--theme-shadow);
 }
 .pricing:hover {
   border: 3px solid var(--red-main);

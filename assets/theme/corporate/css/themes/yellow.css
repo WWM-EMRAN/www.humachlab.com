@@ -269,7 +269,7 @@ a:hover {
 }
 .pricing-active {
   border: 3px solid var(--red-main);
-  box-shadow: 7px 7px var(--red-shadow);
+  box-shadow: 7px 7px var(--theme-shadow);
 }
 .pricing:hover {
   border: 3px solid var(--red-main);
