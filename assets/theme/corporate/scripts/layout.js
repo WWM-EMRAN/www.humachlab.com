@@ -361,16 +361,42 @@ var Layout = function () {
             // normalize
             var c = (!color || color === "default") ? "red" : color;
 
+            console.log('====> selected color', c);
+
             // ✅ persist theme
             try { localStorage.setItem("hml_theme", c); } catch(e) {}
 
             // ensure links exist (your existing logic)
             if (!$('#style-color').length) {
                 $('head').append('<link id="style-color" rel="stylesheet" href="">');
+                console.log('1 ====> theme color set to style file', c);
             }
+            // fav icon
             if (!$('#fav-icon').length) {
-                $('head').append('<link id="fav-icon" rel="icon" type="image/png" href="">');
+                $('head').append('<link id="fav-icon" rel="icon" type="image/x-icon" href="">');
+                console.log('2 ====> theme fav icon set', c);
             }
+            if (!$('#fav-shicon').length) {
+                $('head').append('<link id="fav-shicon" rel="icon" type="image/x-icon" href="">');
+                console.log('2 ====> theme fav icon set', c);
+            }
+            if (!$('#fav-apple').length) {
+                $('head').append('<link id="fav-apple" rel="icon" type="image/x-icon" href="">');
+                console.log('2 ====> theme fav icon set', c);
+            }
+            // ////////////////////
+            // if (!$('#fav-icon').length) {
+            //     $('head').append('<link id="fav-icon" rel="icon" type="image/png" href="">');
+            //     console.log('2 ====> theme fav icon set', c);
+            // }
+            // if (!$('#fav-shicon').length) {
+            //     $('head').append('<link id="fav-shicon" rel="icon" type="image/png" href="">');
+            //     console.log('2 ====> theme fav icon set', c);
+            // }
+            // if (!$('#fav-apple').length) {
+            //     $('head').append('<link id="fav-apple" rel="icon" type="image/png" href="">');
+            //     console.log('2 ====> theme fav icon set', c);
+            // }
 
             if (c) {
                 document.documentElement.style.setProperty(
@@ -380,24 +406,46 @@ var Layout = function () {
 
             // favicon
             $('#fav-icon').attr("href",
-                "assets/myresources/icons/HML-FavIcon-" + c + ".png"
+                "assets/myresources/icons/HML-FavIcon-" + c + ".ico"
             );
+            $('#fav-shicon').attr("href",
+                "assets/myresources/icons/HML-FavIcon-" + c + ".ico"
+            );
+            $('#fav-apple').attr("href",
+                "assets/myresources/icons/HML-FavIcon-" + c + ".ico"
+            );
+            // ////////////////////////////
+            // $('#fav-icon').attr("href",
+            //     "assets/myresources/icons/HML-FavIcon-" + c + ".png"
+            // );
+            // $('#fav-shicon').attr("href",
+            //     "assets/myresources/icons/HML-FavIcon-" + c + ".png"
+            // );
+            // $('#fav-apple').attr("href",
+            //     "assets/myresources/icons/HML-FavIcon-" + c + ".png"
+            // );
+            console.log('3 ====> theme fav icon set', c);
 
             $('#preloadLogo').attr("src",
                 "assets/myresources/icons/HML-FavIcon-" + c + ".png"
             );
+            console.log('4 ====> theme preload logo set', c);
 
             // theme css (✅ cache-bust to avoid stale CSS)
             $('#style-color').attr("href",
                 "assets/theme/corporate/css/themes/" + c + ".css?v=" + Date.now()
             );
+            console.log('5 ====> theme style file set', c);
 
             // logos
-            $('.corporate .site-logo img')
-                .attr("src", "assets/myresources/logos/HML-Logo-" + c + ".png");
+            $('.corporate .site-logo img').attr("src",
+                "assets/myresources/logos/HML-Logo-" + c + ".png"
+            );
+            console.log('6 ====> theme header logo set', c);
 
-            $('.ecommerce .site-logo img')
-                .attr("src", "assets/myresources/logos/HML-shop-" + c + ".png");
+            // $('.ecommerce .site-logo img').attr("src",
+            //     "assets/myresources/logos/HML-shop-" + c + ".png"
+            // );
 
         };
 

@@ -29,7 +29,13 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
 <!-- Head BEGIN -->
 <head>
     <!-- favicon START -->
-    <link rel="icon" type="image/png" href="assets/myresources/icons/HML-FavIcon-red.png" id="fav-icon">
+<!--    <link rel="icon" type="image/png" href="assets/myresources/icons/HML-FavIcon-red.png" id="fav-icon">-->
+    <link rel="icon" type="image/x-icon" href="assets/myresources/icons/HML-FavIcon-red.ico" id="fav-icon">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/myresources/icons/HML-FavIcon-red.ico" id="fav-shicon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="assets/myresources/icons/HML-FavIcon-red.ico" id="fav-apple">
+<!--    <link rel="icon" type="image/png" href="assets/myresources/icons/HML-FavIcon-red.png" id="fav-icon">-->
+<!--    <link rel="shortcut icon" type="image/png" href="assets/myresources/icons/HML-FavIcon-red.png" id="fav-shicon">-->
+<!--    <link rel="apple-touch-icon" type="image/png" href="assets/myresources/icons/HML-FavIcon-red.png" id="fav-apple">-->
     <!-- favicon END -->
 
     <!-- common metadata, style sheets and fonts -->
@@ -119,30 +125,49 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                                 Reach out to us via this form. We will be happy to hear from you.
                             </p>
 
-                            <!-- BEGIN FORM-->
-                            <form action="form_contact" method="POST" role="form">
+<!--                            &lt;!&ndash; BEGIN FORM&ndash;&gt;-->
+<!--                            <form action="form_contact" method="POST" role="form">-->
 
+<!--                                <div class="form-group">-->
+<!--                                    <label id="contacts-name">Name <span class="color-red">*</span></label>-->
+<!--                                    <input type="text" placeholder="You Name" class="form-control" name="contact_name" required>-->
+<!--                                </div>-->
+<!--                                <div class="form-group">-->
+<!--                                    <label id="contacts-email">Email <span class="color-red">*</span></label>-->
+<!--                                    <input type="email" placeholder="youremail@mail.com" class="form-control" name="contact_email" required>-->
+<!--                                </div>-->
+<!--                                <div class="form-group">-->
+<!--                                    <label id="contacts-message">Message <span class="color-red">*</span></label>-->
+<!--                                    <textarea class="form-control" placeholder="Your message" rows="5"-->
+<!--                                              name="contact_message" required></textarea>-->
+<!--                                </div>-->
+<!--                                <button type="submit" class="btn btn-primary"><i class="icon-ok"></i> Send</button>-->
+<!--                                <button type="button" class="btn btn-default">Cancel</button>-->
+<!--                            </form>-->
+<!--                            &lt;!&ndash; END FORM&ndash;&gt;-->
+
+                            <form id="hml-contact-form" role="form">
                                 <div class="form-group">
-                                    <label id="contacts-name">Name <span class="color-red">*</span></label>
-                                    <input type="text" placeholder="You Name" class="form-control" name="contact_name" required>
+                                    <label>Name <span class="color-red">*</span></label>
+                                    <input type="text" id="contact_name" placeholder="Your Name" class="form-control" required>
                                 </div>
                                 <div class="form-group">
-                                    <label id="contacts-email">Email <span class="color-red">*</span></label>
-                                    <input type="email" placeholder="youremail@mail.com" class="form-control" name="contact_email" required>
+                                    <label>Email <span class="color-red">*</span></label>
+                                    <input type="email" id="contact_email" placeholder="youremail@mail.com" class="form-control" required>
                                 </div>
                                 <div class="form-group">
-                                    <label id="contacts-message">Message <span class="color-red">*</span></label>
-                                    <textarea class="form-control" placeholder="Your message" rows="5"
-                                              name="contact_message" required></textarea>
+                                    <label>Message <span class="color-red">*</span></label>
+                                    <textarea id="contact_message" class="form-control" placeholder="Your message" rows="5" required></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-primary"><i class="icon-ok"></i> Send</button>
-                                <button type="button" class="btn btn-default">Cancel</button>
+                                <button type="button" onclick="sendThemedEmail()" class="btn btn-primary">
+                                    <i class="fa fa-envelope"></i> Send via Email Client
+                                </button>
+                                <button type="reset" class="btn btn-default">Clear</button>
                             </form>
-                            <!-- END FORM-->
 
                         </div>
 
-                        <div class="col-md-3 col-sm-3 sidebar2">
+                        <div class="col-md-3 col-sm-3 sideba2">
                             <h2>Contact Details</h2>
                             <address>
                                 <strong>HumachLab</strong><br>
