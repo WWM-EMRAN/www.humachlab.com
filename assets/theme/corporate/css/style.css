@@ -3829,15 +3829,15 @@ Styler Panel
 }
 
 /* Service Box Styling */
-.hml-service-box {
-    background: #fff;
-    border: 1px solid #eee;
-    padding: 30px;
-    height: 100%;
-    transition: all 0.3s ease;
-    border-radius: 4px;
-    position: relative;
-}
+/*.hml-service-box {*/
+/*    background: #fff;*/
+/*    border: 1px solid #eee;*/
+/*    padding: 30px;*/
+/*    height: 100%;*/
+/*    transition: all 0.3s ease;*/
+/*    border-radius: 4px;*/
+/*    position: relative;*/
+/*}*/
 
 .hml-service-box:hover {
     border-color: var(--theme-primary);
@@ -3868,3 +3868,163 @@ Styler Panel
     margin-right: 5px;
 }
 
+/* 1. Force the row to behave as a Flex Container */
+.hml-service-section.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* 2. Remove floats and force columns to stretch to the tallest height */
+.hml-service-section.row > [class*="col-"] {
+    display: flex;
+    float: none; /* Kills the float that causes the 'snagging' */
+}
+
+/* 3. Modify your existing .hml-service-box to work inside the flex column */
+.hml-service-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ensures it fills the column width */
+    /* Your existing styles below */
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 30px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    position: relative;
+}
+
+/* 4. Align the bullet points to the bottom for a clean look */
+.hml-service-box ul {
+    margin-top: auto;
+    padding-top: 15px;
+}
+
+
+
+/* About Page Custom Boxes */
+/* About Page Core Values Grid */
+/* About Page Vertical Foundations */
+.hml-value-item {
+    display: flex;
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border-left: 5px solid var(--theme-primary);
+    transition: transform 0.3s ease;
+}
+
+.hml-value-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 5px 15px var(--theme-shadow);
+}
+
+.hml-value-icon {
+    font-size: 40px;
+    margin-right: 30px;
+    min-width: 60px;
+    text-align: center;
+}
+
+.hml-value-text strong {
+    font-size: 22px;
+    display: block;
+    margin-bottom: 10px;
+    color: var(--theme-primary);
+}
+
+.hml-value-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.hml-value-text ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f9f9f9;
+}
+
+.hml-value-text ul li:last-child {
+    border-bottom: none;
+}
+
+
+/* Styling for the detailed list items on the About Page */
+.hml-detailed-list li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    padding-left: 5px;
+}
+
+.hml-detailed-list li b {
+    color: var(--theme-primary);
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+/* Styling for the detailed list items on the About Page */
+.hml-detailed-list {
+    margin-top: 20px;
+}
+
+.hml-detailed-list li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    display: flex;
+    align-items: flex-start;
+}
+
+.hml-detailed-list li i {
+    color: var(--theme-primary);
+    margin-right: 12px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.hml-detailed-list li b {
+    color: var(--theme-primary);
+    margin-right: 5px;
+}
+
+
+/* Custom Utility Classes */
+.color-blue { color: #3598dc !important; }
+.color-green { color: #3cc051 !important; }
+.color-red { color: #e02222 !important; }
+
+/* The BETTER Way: Make them follow your 11 themes */
+.hml-theme-icon {
+    color: var(--theme-primary) !important;
+}
+
+/* Dynamic Theme Text */
+.hml-theme-text {
+    color: var(--theme-primary) !important;
+    font-weight: bold; /* Optional: makes the themed part pop more */
+}
+
+
+
+
+
+/* Theme-aware hover for Service Brief buttons */
+.btn-default.btn-sm {
+    transition: all 0.3s ease;
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #555;
+}
+
+.btn-default.btn-sm:hover {
+    background-color: var(--theme-primary) !important;
+    border-color: var(--theme-primary) !important;
+    color: #fff !important; /* Ensures text turns white on themed background */
+    transform: translateY(-2px); /* Subtle lift effect */
+    box-shadow: 0 4px 8px var(--theme-shadow);
+}
+
+/* Ensure the arrow icon also changes color */
+.btn-default.btn-sm:hover i {
+    color: #fff !important;
+}
