@@ -376,6 +376,10 @@ var Layout = function () {
                 $('head').append('<link id="fav-icon" rel="icon" type="image/x-icon" href="">');
                 console.log('2 ====> theme fav icon set', c);
             }
+            if (!$('#fav-icon2').length) {
+                $('head').append('<link id="fav-icon2" rel="icon" type="image/png" href="">');
+                console.log('2 ====> theme fav icon set', c);
+            }
             if (!$('#fav-shicon').length) {
                 $('head').append('<link id="fav-shicon" rel="icon" type="image/x-icon" href="">');
                 console.log('2 ====> theme fav icon set', c);
@@ -407,6 +411,9 @@ var Layout = function () {
             // favicon
             $('#fav-icon').attr("href",
                 "assets/myresources/icons/HML-FavIcon-" + c + ".ico"
+            );
+            $('#fav-icon2').attr("href",
+                "assets/myresources/icons/HML-FavIcon-" + c + ".png"
             );
             $('#fav-shicon').attr("href",
                 "assets/myresources/icons/HML-FavIcon-" + c + ".ico"
